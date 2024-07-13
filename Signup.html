@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body {
+            background-image: url(https://img.freepik.com/free-photo/drinks-glasses-new-year-eve-celebration_23-2150901946.jpg?t=st=1706290512~exp=1706294112~hmac=3e6cc2dda369635f9cb3c5a881f71caf73ff8661d5bbbae34481f20305dca049&w=1060);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="signup_process.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"placeholder="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+</body>
+</html>
